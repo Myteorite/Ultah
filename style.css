@@ -1,28 +1,23 @@
 /* Reset Dasar & Latar Body */
+:root {
+    --color-bg-main: #3a5a78;      /* Biru tua latar belakang body */
+    --color-page: #fdfdfd;         /* Warna kertas buku yang bersih/putih pudar */
+    --color-cover: #1a1a1a;        /* Warna sampul buku hitam pekat */
+    --color-text-main: #0d2a48;    /* Warna teks utama di buku (biru sangat tua) */
+    --color-text-subtle: #5c6a79;  /* Warna teks sekunder di buku (abu-abu kebiruan) */
+    --color-shadow-start: rgba(0, 0, 0, 0.15); /* Warna awal bayangan di tengah buku */
+    --color-shadow-end: rgba(0, 0, 0, 0);      /* Warna akhir bayangan (transparan) */
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #eceff1; /* Warna latar belakang netral */
-    font-family: 'Arial', sans-serif;
+    background-color: var(--color-bg-main);
+    font-family: 'Georgia', 'Times New Roman', serif; /* Font serif klasik default */
     margin: 0;
-    overflow: hidden; /* Mencegah scrollbar */
-}
-
-/* Kontainer Utama untuk Setiap Tampilan */
-.view-container {
-    display: flex; /* Default untuk view aktif */
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: absolute; /* Untuk tumpang tindih */
-    top: 0;
-    left: 0;
-    opacity: 0; /* Mulai transparan */
-    visibility: hidden; /* Mulai tersembunyi */
-    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; /* Transisi untuk muncul/hilang */
+    overflow: hidden; /* Mencegah scrollbar jika konten pas */
 }
 
 .view-container.active-view {
@@ -171,11 +166,11 @@ body {
 }
 
 .book {
-    width: 700px; /* Lebar untuk dua halaman terbuka */
-    height: 500px; /* Tinggi buku */
+    width: 700px; /* Lebar buku tetap */
+    height: 500px; /* Tinggi buku tetap */
     position: relative;
     transform-style: preserve-3d;
-    margin-bottom: 20px; /* Jarak jika ada elemen lain di bawah buku */
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.3)); /* Bayangan di bawah buku */
 }
 
 .book-leaf {
