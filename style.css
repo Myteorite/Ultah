@@ -20,6 +20,20 @@ body {
     overflow: hidden; /* Mencegah scrollbar jika konten pas */
 }
 
+.view-container {
+    display: flex; /* Default untuk view aktif */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Untuk tumpang tindih */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Mulai transparan */
+    visibility: hidden; /* Mulai tersembunyi */
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; /* Transisi untuk muncul/hilang */
+}
+
 .view-container.active-view {
     opacity: 1;
     visibility: visible;
