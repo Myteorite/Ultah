@@ -66,13 +66,9 @@ body {
 }
 
 .birthday-card {
-    width: 350px;
-    height: 500px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1s ease-in-out;
-    cursor: pointer;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Lebarnya 90% dari layar */
+    max-width: 350px; /* TAPI jangan lebih lebar dari 350px di layar besar */
+    /* ...properti lain... */
 }
 
 .birthday-card.flipped {
@@ -171,11 +167,9 @@ body {
 }
 
 .book {
-    width: 700px; /* Lebar untuk dua halaman terbuka */
-    height: 500px; /* Tinggi buku */
-    position: relative;
-    transform-style: preserve-3d;
-    margin-bottom: 20px; /* Jarak jika ada elemen lain di bawah buku */
+    width: 95%; /* Lebarnya 95% dari layar */
+    max-width: 700px; /* TAPI jangan lebih lebar dari 700px */
+    /* ...properti lain... */
 }
 
 .book-leaf {
