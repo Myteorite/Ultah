@@ -1,4 +1,5 @@
 /* Reset Dasar & Latar Body */
+
 :root {
     --color-bg-main: #3a5a78;      /* Biru tua latar belakang body */
     --color-page: #fdfdfd;         /* Warna kertas buku yang bersih/putih pudar */
@@ -20,6 +21,7 @@ body {
     overflow: hidden; /* Mencegah scrollbar jika konten pas */
 }
 
+/* Kontainer Utama untuk Setiap Tampilan */
 .view-container {
     display: flex; /* Default untuk view aktif */
     justify-content: center;
