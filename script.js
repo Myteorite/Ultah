@@ -77,7 +77,7 @@ function initializeCake() {
 
 // Fungsi untuk memutar musik
 function playMusicFromUrl() {
-    const musicUrl = "https://github.com/Myteorite/Ultah/blob/main/Media/Sal_Priadi_Serta_Mulia.mp3?raw=true";
+    const musicUrl = "https://raw.githubusercontent.com/Myteorite/Ultah/refs/heads/main/Media/Musik/Sal_Priadi_Serta_Mulia.mp3";
     if (musicUrl) {
         if (audioPlayer) {
             audioPlayer.pause();
@@ -186,4 +186,5 @@ switchToBookButton.addEventListener('click', () => {
 // Pastikan kue diinisialisasi saat halaman selesai dimuat
 document.addEventListener('DOMContentLoaded', () => {
     initializeCake();
+
 });
