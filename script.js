@@ -77,7 +77,7 @@ function initializeCake() {
 
 // Fungsi untuk memutar musik
 function playMusicFromUrl() {
-    const musicUrl = "https://github.com/Myteorite/Ultah/blob/0d729e84f9e3664ace03c5f92e5b9710613f16b8/Media/Musik/Sal_Priadi_Serta_Mulia.mp3?raw=true";
+    const musicUrl = "https://github.com/Myteorite/Ultah/blob/05b539a50d3bf701a03f4ccc9ec0f629e6b937aa/Media/Musik/Sal%20Priadi%20-%20Serta%20Mulia%20(Official%20Lyric%20Video).mp3?raw=true";
     if (musicUrl) {
         if (audioPlayer) {
             audioPlayer.pause();
@@ -188,4 +188,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeCake();
 
 });
+
 
